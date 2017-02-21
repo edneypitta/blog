@@ -1,28 +1,26 @@
 ---
-title: First Post, no hero.
-date: 2016-01-22
+date: 2016-01-22T00:00:00.000Z
 layout: Post
+title: 'First Post, no hero.'
 ---
 
-This is the first post!
+This is the first post! EDITED
 
 Code is highlighted by default.
 
-```js
-const StatelessComponent = (props) => {
-  return (
-    <div>
-      I‘m a stateless component that accepts children
-      { props.children }
-    </div>
-  )
-}
-
-// ...
-
-  return (
-    <StatelessComponent>
-      Example of child
-    </StatelessComponent>
-  )
-```
+    const StatelessComponent = (props) => {
+      return (
+        <div>
+          I‘m a stateless component that accepts children
+          { props.children }
+        </div>
+      )
+    }
+    
+    // ...
+    
+      return (
+        <StatelessComponent>
+          Example of child
+        </StatelessComponent>
+      )
