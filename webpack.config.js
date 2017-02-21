@@ -8,6 +8,8 @@ import PhenomicLoaderFeedWebpackPlugin
 import PhenomicLoaderSitemapWebpackPlugin
   from "phenomic/lib/loader-sitemap-webpack-plugin"
 
+import CopyWebpackPlugin from "copy-webpack-plugin"
+
 import pkg from "./package.json"
 
 export default (config = {}) => {
@@ -217,6 +219,9 @@ export default (config = {}) => {
     postcss: postcssPlugins,
 
     plugins: [
+       new CopyWebpackPlugin([
+        {from: 'admin', to: 'admin'},
+      ]),
       // webpack 2
       /*
       // You should be able to remove the block below when the following
