@@ -1,91 +1,79 @@
-/* Using global sytles is not recommended, prefer local styles via CSS Modules */
-
-/*
- * box model like it should be
- *
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- */
-html { box-sizing: border-box; }
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+@font-face {
+  font-family: 'sourcesanspro';
+  src: url('./components/font/sourcesanspro.woff2') format('woff2'),
+       url('./components/font/sourcesanspro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-/*
- * kill document defaults margin & padding. We all do that all the time, right ?
- */
-html,
+@font-face {
+  font-family: 'cabana';
+  src: url('./components/font/cabana-regular.otf') format('opentype');
+}
+
+::selection {
+  color: #FFFFFF;
+  background-color: var(--color);
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   margin: 0;
-  padding: 0;
+  color: #34495e;
+  font-size: 15px;
+  line-height: 1.6;
+  background-color: #fff;
+  position:relative;
+  font-family: 'sourcesanspro', 'Helvetica Neue', Arial, sans-serif;
 }
 
-/*
- * page styles
- */
-html {
-  min-height: 100%;
-  background: color(var(--colorPrimary) l(99%));
+ul {
+  margin: 1rem 0;
 }
 
-body {
-  color: var(--colorText);
-  font-size: 1rem;
-  line-height: 1.5rem;
-
-  /* system font https://medium.com/designing-medium/system-shock-6b1dc6d6596f */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-}
-
-/*
- * .phenomic-HeadingAnchor
- *
- * anchors for markdown headings, generated via markdown renderer, so require
- * global styling
- */
-@custom-selector :--headings h1, h2, h3, h4, h5, h6;
-
-:--headings {
-  position: relative;
-}
-
-:root {
-  --phenomic-HeadingAnchor-width: 1.4rem;
-  --phenomic-HeadingAnchor-margin: 0.4rem;
-}
-
-.phenomic-HeadingAnchor {
-  display: inline-block;
-  text-align: center;
-  margin-left: calc(-1 * (var(--phenomic-HeadingAnchor-width) + var(--phenomic-HeadingAnchor-margin)));
-  margin-right: var(--phenomic-HeadingAnchor-margin);
-  width: var(--phenomic-HeadingAnchor-width);
-  line-height: var(--phenomic-HeadingAnchor-width);
+a, a:active {
+  color: var(--text);
   text-decoration: none;
-  opacity: 0.1;
-  transition: opacity 0.2s;
-
-  @nest :--headings:hover & {
-    opacity: 1;
-  }
-}
-
-/* minimal styling, prefer removing this and use local styles */
-a {
-  color: inherit;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
 hr {
   border: 0;
-  height: 1px;
-  background: var(--colorNeutral);
-  opacity: 0.2;
-  margin: 2rem 0;
+}
+
+iframe, video {
+  max-width: 100%;
+  margin: 1rem auto;
+  display: block;
+}
+
+table {
+  width: 100%;
+  margin: 1em auto;
+}
+
+table thead {
+  background-color: #ddd;
+}
+
+table thead th {
+  padding: 5px;
+  min-width: 20px;
+}
+
+table tbody tr:nth-child(2n) {
+  background-color: #eee;
+}
+
+table tbody td {
+  padding: 5px;
+  vertical-align: text-top;
+}
+
+.ds-thread,
+#disqus_thread {
+  margin-bottom: 2em;
 }

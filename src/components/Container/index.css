@@ -1,5 +1,9 @@
-.container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.wrap {
+  @media (--small) {
+  	width: 100%;
+  }
+  @media (--large) {
+  	width: 700px;
+    margin: 0 auto;
+  }
 }

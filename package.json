@@ -1,9 +1,11 @@
 {
   "private": true,
   "name": "chicocodeio",
-  "homepage": "http://chicocode.io",
+  "homepage": "https://chicocode.io",
   "twitter": "",
   "repository": "",
+  "github": "https://github.com/chicocode",
+  "googleAnalyticsUA": "UA-96776324-1",
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",
     "lint:css": "stylelint \"src/**/*.css\"",
@@ -134,5 +136,13 @@
     "warning": "^3.0.0",
     "webpack": "^1.11.0",
     "whatwg-fetch": "^0.11.0"
+  },
+  "dependencies": {
+    "normalize.css": "^5.0.0",
+    "react-disqus-thread": "^0.4.0",
+    "react-easter": "^1.0.6",
+    "react-google-analytics": "^0.2.0",
+    "react-particles-js": "^1.5.0",
+    "yaml-loader": "^0.4.0"
   }
 }

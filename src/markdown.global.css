@@ -1,0 +1,73 @@
+h2 a.phenomic-HeadingAnchor,
+h3 a.phenomic-HeadingAnchor,
+h4 a.phenomic-HeadingAnchor,
+h5 a.phenomic-HeadingAnchor,
+h6 a.phenomic-HeadingAnchor {
+  content: "#";
+  color: var(--color);
+  position: absolute;
+  left: -0.7em;
+  top: -4px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.phenomic-BodyContainer {
+  padding-top: 0.6em;
+}
+
+.phenomic-BodyContainer img {
+    display: block;
+    max-width: 100%;
+    margin: 1em auto;
+}
+
+.phenomic-BodyContainer img.no-style {
+    display: inherit;
+    max-width: auto;
+    margin: auto;
+}
+
+.phenomic-BodyContainer a {
+  color: var(--color);
+  word-break: break-all;
+  &:hover {
+    color: var(--colorSecondary)
+  }
+}
+
+div.center img {
+  display: block;
+  max-width: 100%;
+  margin: 1em auto;
+}
+
+.tip {
+  position: relative;
+  margin: 2em 0;
+  padding: 12px 24px 12px 30px;
+  border-left: 4px solid var(--tip);
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-color: #f8f8f8;
+  &:before {
+    position: absolute;
+    top: 14px;
+    left: -12px;
+    content: "!";
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--tip);
+    font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  }
+}
+
+.tip br {
+  display: none;
+}

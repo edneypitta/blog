@@ -2,14 +2,21 @@ import React, { PropTypes } from "react"
 import enhanceCollection from "phenomic/lib/enhance-collection"
 
 import PagesList from "../../components/PagesList"
+import Button from "../../components/Button"
+
+import {getLangContext as getLang} from "../../i18n/getLang"
+import {getFromContext as get} from "../../i18n/get"
 
 import styles from "./index.css"
 
 const defaultNumberOfPosts = 6
 
-const LatestPosts = (props, { collection }) => {
-  const latestPosts = enhanceCollection(collection, {
-    filter: { layout: "Post" },
+const LatestPosts = (props, context) => {
+  const locale = getLang(context)
+  const {archive: {name, url}} = get(context)
+  const latestPosts = enhanceCollection(context.collection, {
+    filter: pg => pg.layout === "Post"
+      && pg.__filename.startsWith(`${ locale }`),
     sort: "date",
     reverse: true,
   })
@@ -17,20 +24,26 @@ const LatestPosts = (props, { collection }) => {
 
   return (
     <div>
-      <h2 className={ styles.latestPosts }>
-        { "Latest Posts" }
-      </h2>
-      <PagesList pages={ latestPosts } />
+      <ul className={styles.list}>
+        <PagesList pages={ latestPosts } />
+      </ul>
+      <div className={styles.container}>
+        <Button to={url}>
+          {name}
+        </Button>
+      </div>
     </div>
   )
 }
 
 LatestPosts.propTypes = {
-  numberOfPosts: PropTypes.number,
+  numberOfPosts: PropTypes.number
 }
 
 LatestPosts.contextTypes = {
   collection: PropTypes.array.isRequired,
+  metadata: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired
 }
 
 export default LatestPosts

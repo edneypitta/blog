@@ -1,7 +1,13 @@
 .list {
-  display: flex;
-  flex-direction: column;
-
+  margin: 2em 0;
   list-style: none;
   padding: 0;
+}
+
+.item {
+  padding: 1em 0 2em;
+  border-bottom: 1px solid #ddd;
+   &:last-child {
+    border-bottom: 0px;
+  }
 }

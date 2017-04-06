@@ -1,0 +1,37 @@
+---
+  lang: English
+  more: more
+  footer:
+    buildWith: built with
+    using: using
+  loading: Loading...
+  noPosts: No posts yet.
+  archive:
+    name: Archive
+    url: /en/archive
+  about:
+    name: About
+    url: /en/about
+  months:
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+  disqus:
+    shortname: chicocode.io-en
+  error404Title: "Not Found"
+  error404Message: It seems you found a broken link\nSorry about that\n\nDo not hesitate to report this page 😁
+  konami:
+    first: You've found the glitch
+    second: Pick up your reward
+    fun:
+      text: Have fun 😝
+      shadow: Have fun 😝

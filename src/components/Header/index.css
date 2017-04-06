@@ -1,55 +1,75 @@
-:root {
-  --nav-item-padding: 0.5rem;
-}
-
 .header {
-  position: absolute;
-  /* stretch */
-  left: 0;
-  right: 0;
+  min-height: 60px;
 
-  color: var(--colorNeutralLight);
-}
+  @media (--large) {
+    padding: 20px 100px;
+  }
 
-.nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: calc(var(--maxWidth) + (var(--nav-item-padding) * 2));
-  margin: 0 auto;
-  padding: 0;
-  line-height: 3rem;
-}
-
-.navPart1,
-.navPart2 {
-  display: flex;
-  flex-direction: row;
-}
-
-.link {
-  display: flex;
-  align-items: center;
-  padding: 0 var(--nav-item-padding);
-  color: inherit;
-  text-decoration: none !important;
-  opacity: 0.6;
-  transition: 0.4s all;
-  border-bottom: 1px solid transparent;
-
-  &:hover,
-  &:focus {
-    color: inherit;
-    opacity: 1;
-    border-bottom-color: var(--colorNeutralLight);
+  @media (--small) {
+    padding: 20px 0;
   }
 }
 
-.link svg {
-  fill: currentColor;
-  opacity: 0.5;
-  margin-right: 0.5rem;
-  width: 14px;
-  height: 14px;
-  vertical-align: middle;
+.logo {
+  float: left;
+  font-family: 'cabana';
+  letter-spacing: 3pt;
+  display: inline-block;
+  padding: 15px 10px;
+  font-weight: bold;
+  font-size: 20px;
+
+  @media (--small) {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+
+.info {
+  color: var(--neutral)
+}
+
+.logo img {
+  height: 60px;
+}
+
+.nav {
+  float: right;
+  left: 80px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (--small) {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+
+.nav li {
+  display: inline-block;
+  padding: 19px 10px;
+
+  margin: 0;
+  list-style-type: none;
+  text-transform: uppercase;
+
+  @media (--small) {
+    padding: 10px 10px;
+  }
+}
+
+.nav li a {
+  font-size: 16px;
+  line-height: 1.4;
+
+  &:hover {
+    border-bottom: 2px solid var(--color);
+  }
+}
+
+.active {
+  border-bottom: 2px solid var(--color);
 }

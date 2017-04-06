@@ -1,6 +1,7 @@
 ---
-layout: PageError
-route: 404.html
+title: Archive
+layout: Archive
+route: /pt-br/arquivo
 ---
 <!---
   Content here not used, see ``src/layouts/PageError``

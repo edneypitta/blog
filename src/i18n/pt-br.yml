@@ -1,0 +1,37 @@
+---
+  lang: Português
+  more: mais
+  footer:
+    buildWith: criado com muito
+    using: usando
+  loading: Carregando...
+  noPosts: Ainda não existe posts.
+  archive:
+    name: Arquivo
+    url: /pt-br/arquivo
+  about:
+    name: Sobre
+    url: /pt-br/sobre
+  months:
+    - Janeiro
+    - Fevereiro
+    - Março
+    - Abril
+    - Maio
+    - Junho
+    - Julho
+    - Agosto
+    - Setembro
+    - Outubro
+    - Novembro
+    - Dezembro
+  disqus:
+    shortname: chicocode-io-pt-br
+  error404Title: Não Encontrado
+  error404Message: Parece que você encontrou um link quebrado\nDesculpe-me por isso\nNão exite em reportar esta página 😁
+  konami:
+    first: Você encontrou a falha
+    second: Pegue sua recompensa
+    fun:
+      text: Divirta-se 😝
+      shadow: Divirta-se 😝

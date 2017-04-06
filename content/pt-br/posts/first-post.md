@@ -4,11 +4,12 @@ date: 2016-01-22
 layout: Post
 ---
 
-This is the first post!
+This is the first post for gui asjkdaisjd
+## Quick Start
 
 Code is highlighted by default.
 
-```js
+```jsx
 const StatelessComponent = (props) => {
   return (
     <div>

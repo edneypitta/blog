@@ -1,14 +1,20 @@
 .footer {
+  padding-bottom: 1px;
+}
+.heart {
+	color: var(--tip);
+}
+.copyright {
+  margin: 4em 0;
+  border-top: 1px solid #ddd;
   text-align: center;
 }
-
-.phenomicReference {
-  font-size: 0.75rem;
-  opacity: 0.6;
-  color: inherit;
-  text-decoration: none;
-}
-
-.phenomicReferenceName {
+.copyright p, 
+.copyright a {
+  color: #aaa;
+  font-size: 14px;
   font-weight: 100;
+}
+.copyright a:hover {
+  color: #888;
 }

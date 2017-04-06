@@ -1,12 +1,9 @@
 import React, { PropTypes } from "react"
 import Helmet from "react-helmet"
 import warning from "warning"
-import { BodyContainer, joinUri, Link } from "phenomic"
+import { BodyContainer, joinUri } from "phenomic"
 
-import Button from "../../components/Button"
 import Loading from "../../components/Loading"
-
-import styles from "./index.css"
 
 const Page = (
   {
@@ -17,10 +14,10 @@ const Page = (
     body,
     header,
     footer,
-    children,
+    children
   },
   {
-    metadata: { pkg },
+    metadata: { pkg }
   }
 ) => {
   warning(
@@ -50,43 +47,25 @@ const Page = (
     { name: "description", content: head.description },
   ]
 
+  const BodyRender = () => {
+    if (typeof(body) === 'undefined' || body.startsWith("<!-- no-content"))
+      return null
+    return <BodyContainer>{body}</BodyContainer>
+  }
+
   return (
-    <div className={ styles.page }>
+    <div>
       <Helmet
         title={ metaTitle }
         meta={ meta }
       />
-      {
-        <div
-          className={ styles.hero }
-          style={ head.hero && {
-            background: `#111 url(${ head.hero }) 50% 50% / cover`,
-          } }
-        >
-          <div className={ styles.header }>
-            <div className={ styles.wrapper }>
-              <h1 className={ styles.heading }>{ head.title }</h1>
-              {
-                head.cta &&
-                <Link to={ head.cta.link }>
-                  <Button className={ styles.cta } light { ...head.cta.props }>
-                    { head.cta.label }
-                  </Button>
-                </Link>
-              }
-            </div>
-          </div>
-        </div>
-      }
-      <div className={ styles.wrapper + " " + styles.pageContent }>
+      <div>
         { header }
-        <div className={ styles.body }>
-          {
-            isLoading
-            ? <Loading />
-            : <BodyContainer>{ body }</BodyContainer>
-          }
-        </div>
+        {
+          isLoading
+          ? <Loading />
+          : <BodyRender />
+        }
         { children }
         { footer }
       </div>

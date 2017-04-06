@@ -2,45 +2,55 @@ import React, { PropTypes } from "react"
 
 import Page from "../Page"
 
-import styles from "./index.css"
+import Button from "../../components/Button"
 
-const PageError = ({ error, errorText }) => (
-  <Page
-    head={{
-      // hero credit: https://www.flickr.com/photos/mypubliclands/16101654539/
-      hero: "https://farm8.staticflickr.com/7559/16101654539_bee5151340_k.jpg",
-    }}
-  >
-    <div className={ styles.container }>
-      <div className={ styles.oops }>{ "😱 Oooops!" }</div>
-      <div className={ styles.text }>
-        <p className={ styles.title }>
-          <strong>{ error }</strong>
-          { " " }
-          { errorText }
-        </p>
-        {
-          error === 404 &&
-          <div>
-            { "It seems you found a broken link. " }
-            { "Sorry about that. " }
-            <br />
-            { "Do not hesitate to report this page 😁." }
-          </div>
-        }
+import styles from "./index.css"
+import {getFromContext as get} from "../../i18n/get"
+
+const PageError = ({ error, errorText }, context) => {
+  const { error404Title, error404Message } = get(context)
+
+  return (
+    <Page head={{ title: error404Title }}>
+      <div className={ styles.container }>
+        <div className={ styles.oops }>😱</div>
+        <div className={ styles.text }>
+          <p className={ styles.title }>
+            <strong>{ error }</strong>
+            { " " }
+            { error404Title }
+          </p>
+          {
+            error === 404 &&
+            <div className={styles.description}>
+              { error404Message.split("\\n").map(text => <div>{text}</div>) }
+            </div>
+          }
+        </div>
       </div>
-    </div>
-  </Page>
-)
+      <div className={styles.actions}>
+        <Button to={"mailto:eu@chicocode.io"}>
+          {"Reportar"}
+        </Button>
+      </div>
+    </Page>
+  )
+}
 
 PageError.propTypes = {
   error: PropTypes.oneOfType([ PropTypes.number, PropTypes.string ]),
-  errorText: PropTypes.string,
+  errorText: PropTypes.string
 }
 
 PageError.defaultProps = {
   error: 404,
   errorText: "Page Not Found",
 }
+
+PageError.contextTypes = {
+  location: PropTypes.object.isRequired,
+  metadata: PropTypes.object.isRequired
+}
+
 
 export default PageError

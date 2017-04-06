@@ -1,34 +1,29 @@
 import React, { PropTypes } from "react"
 import { Link } from "phenomic"
 
-import Button from "../../components/Button"
-
 import styles from "./index.css"
 
-const PagePreview = ({ __url, title, date, description }) => {
-  const pageDate = date ? new Date(date) : null
+import {getFromContext as get} from "../../i18n/get"
+import Date from "../Date"
+
+const PagePreview = ({ __url, title, date, description }, context) => {
+  const i18n = get(context)
 
   return (
-    <div className={ styles.wrapper }>
-      <Link to={ __url } className={ styles.title }>
-        { title }
-      </Link>
-      <div className={ styles.meta }>
-        {
-          pageDate &&
-            <time key={ pageDate.toISOString() }>
-              { pageDate.toDateString() }
-            </time>
-        }
+    <article>
+      <h2 className={styles.title} >
+        <Link to={ __url } className={styles.link}>
+          { title }
+        </Link>
+      </h2>
+      <div className={styles.info}>
+        <Date time={date} />
       </div>
-      <div className={ styles.description }>
-        { description }
-        { " " }
-      </div>
-      <Link to={ __url } className={ styles.readMore }>
-        <Button secondary>{ "Read More →" }</Button>
+      <p> { description } <br /> </p>
+      <Link to={ __url } className={styles.readMore}>
+          { `... ${ i18n.more }` }
       </Link>
-    </div>
+    </article>
   )
 }
 
@@ -37,6 +32,11 @@ PagePreview.propTypes = {
   title: PropTypes.string.isRequired,
   date: PropTypes.string,
   description: PropTypes.string,
+}
+
+PagePreview.contextTypes = {
+  metadata: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired
 }
 
 export default PagePreview
