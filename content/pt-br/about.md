@@ -15,7 +15,7 @@ O conteúdo deste blog foi gerado estaticamente utilizando
   <img alt="" src="/assets/react.svg" class="no-style" width="16" height="16" />
   React
 </a>
-e <a href="https://phenomic.io/" target="_blank">Phenomic</a>. Você poderá encontrar o codigo fonte [aqui](https://github.com/chicocode/chicocodeio) e mais sobre o blog [neste meta post]("/a").
+e <a href="https://phenomic.io/" target="_blank">Phenomic</a>. Você poderá encontrar o codigo fonte [aqui](https://github.com/chicocode/chicocodeio) e mais sobre o blog [neste metapost](/pt-br/stack-do-blog/).
 
 Cabana fonte por <a href="https://www.behance.net/coquet_adrien/" target="_blank">_Adrien Coquet_</a>.
 
