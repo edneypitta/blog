@@ -28,10 +28,10 @@
   disqus:
     shortname: chicocode.io-en
   error404Title: "Not Found"
-  error404Message: It seems you found a broken link\nSorry about that\n\nDo not hesitate to report this page 😁
+  error404Message: It seems you found a broken link\nSorry about that\n\nDo not hesitate to report this page
   konami:
     first: You've found the glitch
     second: Pick up your reward
     fun:
-      text: Have fun 😝
-      shadow: Have fun 😝
+      text: Have fun
+      shadow: Have fun

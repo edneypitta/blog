@@ -22,7 +22,7 @@ Cabana fonte por <a href="https://www.behance.net/coquet_adrien/" target="_blank
 Contato
 ---
 Sinta-se à vontade para me contatar por qualquer meio de comunicação.
-Ficarei feliz em responder. 😁
+Ficarei feliz em responder.
 
 * [Github](https://github.com/chicocode)
 * [Facebook](https://www.facebook.com/japa.f)

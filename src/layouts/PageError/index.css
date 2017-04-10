@@ -8,8 +8,6 @@
 }
 
 .oops {
-  font-size: 4rem;
-  line-height: 4rem;
   background: -webkit-linear-gradient(#14A697, #F2C12E, #F29D35, #F27649, #F25252);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -32,9 +30,8 @@
 }
 
 .title {
-  margin: 4rem 0;
+  margin: 0;
   font-size: 5.5rem;
-  line-height: 3rem;
   text-align: center;
   font-family: 'cabana';
   @media (--small) {

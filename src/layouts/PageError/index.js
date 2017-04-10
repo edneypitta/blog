@@ -13,9 +13,8 @@ const PageError = ({ error, errorText }, context) => {
   return (
     <Page head={{ title: error404Title }}>
       <div className={ styles.container }>
-        <div className={ styles.oops }>😱</div>
         <div className={ styles.text }>
-          <p className={ styles.title }>
+          <p className={ `${styles.title} ${styles.oops}` }>
             <strong>{ error }</strong>
             { " " }
             { error404Title }

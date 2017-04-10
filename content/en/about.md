@@ -21,7 +21,7 @@ Cabana font by <a href="https://www.behance.net/coquet_adrien/" target="_blank">
 Contact
 ---
 Feel free to contact me by any means of communications.
-I will be glad to answer. 😁
+I will be glad to answer.
 
 * [Github](https://github.com/chicocode)
 * [Facebook](https://www.facebook.com/japa.f)

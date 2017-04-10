@@ -28,6 +28,14 @@ h6 a.phenomic-HeadingAnchor {
     margin: auto;
 }
 
+.phenomic-BodyContainer p:first-child {
+  margin-top: 0;
+}
+
+.phenomic-BodyContainer p:first-child img:first-child {
+  margin-top: 0;
+}
+
 .phenomic-BodyContainer a {
   color: var(--color);
   word-break: break-all;

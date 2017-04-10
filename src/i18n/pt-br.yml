@@ -28,10 +28,10 @@
   disqus:
     shortname: chicocode-io-pt-br
   error404Title: Não Encontrado
-  error404Message: Parece que você encontrou um link quebrado\nDesculpe-me por isso\nNão exite em reportar esta página 😁
+  error404Message: Parece que você encontrou um link quebrado\nDesculpe-me por isso\nNão exite em reportar esta página
   konami:
     first: Você encontrou a falha
     second: Pegue sua recompensa
     fun:
-      text: Divirta-se 😝
-      shadow: Divirta-se 😝
+      text: Divirta-se
+      shadow: Divirta-se
