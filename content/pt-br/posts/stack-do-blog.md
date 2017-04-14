@@ -1,6 +1,6 @@
 ---
 title: Qual a stack deste blog?
-date: 2017-04-07
+date: 2017-04-07 00:00.000 -3
 layout: Post
 route: /pt-br/stack-do-blog
 ---
@@ -15,27 +15,24 @@ Verificar como o post está ficando enquanto eu escrevo, deploy automatizado, e 
 
 Acabei optando por um [gerador de site estático](https://phenomic.io/) que tem como _output_ um site em React, porque acredito que as aplicações SPA fornecem a melhor experiência para o usuário/leitor.
 
-O [Netlify](https://www.netlify.com/) está integrado ao repositório hospedado no GitHub, logo quando subo uma atualização para o repositório, o site em produção é automaticamente atualizado.
+O [Netlify](https://www.netlify.com/) -sem custo algum, plano _FREE_- está integrado ao repositório hospedado no GitHub, logo quando subo uma atualização para o repositório, o site em produção é automaticamente atualizado.
+
+O https foi configurado através do próprio painel, e o certificado gerado pelo [Let's Encrypt](https://letsencrypt.org/), também _FREE_.
 
  Escrevo os _posts_ em Markdown e vejo o conteúdo conforme salvo através do [_hot reloading_](https://gaearon.github.io/react-hot-loader/).
 
-Utilizo _git branches_ para versionamento dos _posts_, apenas conteúdos da _branch **master**_ irão para produção. A _branch **draft**_ possui o conteúdo em progresso, ainda não concluído.
+Utilizo _git branches_ para versionamento dos _posts_. Apenas conteúdos da _branch **master**_ irão para produção. A _branch **draft**_ possui o conteúdo em progresso, ainda não concluído.
 
 Tenho total liberdade sobre a estilização do conteúdo. Se algo no _markdown_ nâo me atender, posso simplesmente adicionar **Html & CSS**.
 
 ``` html
 <div class="tip">
- Lorem ipsum dolor sit amet, consectetur adipisicing elit
+ <strong>chicocode.io</strong>
 </div>
 ```
 Irá renderizar
 <div class="tip">
- Lorem ipsum dolor sit amet, consectetur adipisicing elit
+ <strong>chicocode.io</strong>
 </div>
 
-## flow
-
-Espero que o fluxo de escrita seja algo próximo à imagem abaixo.
-
-
-Se surgirem adaptações irei editar este _post_.
+Acredito ter chegado a um resultado bem satisfatório, estou bastante feliz com a forma como consigo formatar o conteúdo e em como posso disponibilizá-lo.
