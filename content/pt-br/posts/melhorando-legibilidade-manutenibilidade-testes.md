@@ -33,7 +33,10 @@ public void ApplyDiscountShouldReturnCalculatedDiscount()
     discountMock.Setup(x => x.Calculate(It.IsAny<decimal>()))
         .Returns<decimal>(x => x * .5m);
 
-    var sut = new ProductController(productMock.Object, cartMock.Object, discountMock.Object);
+    var sut = new ProductController(
+      productMock.Object,
+      cartMock.Object,
+      discountMock.Object);
 
     sut.ApplyDiscount()
         .Should()

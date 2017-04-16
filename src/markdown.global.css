@@ -10,6 +10,9 @@ h6 a.phenomic-HeadingAnchor {
   top: -4px;
   font-size: 1.2em;
   font-weight: bold;
+  @media (--small) {
+    display: none;
+  }
 }
 
 .phenomic-BodyContainer {

@@ -18,7 +18,8 @@ code {
   line-height: 1.7em;
   position: relative;
   background-color: #f8f8f8;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: visible;
   width: auto;
   display: block;
   &:after {
