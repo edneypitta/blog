@@ -7,7 +7,7 @@ route: /pt-br/melhorando-legibilidade-manutenibilidade-testes
 
 Certas vezes me pego escrevendo testes pouco legíveis. Isso se dá na maioria das vezes quando a fase de **Arrange** fica muito grande.
 
-O Arrange é a fase inicial, onde configuramos o que o [**SUT**](https://en.wikipedia.org/wiki/System_under_test) necessita para que funcione corretamente. É onde isolamos as dependências, configuramos _mocks_, _stubs_ e qualquer outra operação necessária (mais sobre o padrão [aqui](https://www.lambda3.com.br/2010/08/testando-com-aaa-arrange-act-assert/)).
+O Arrange é a fase inicial, onde configuramos tudo que o sistema a ser testado (também chamado de [**SUT**](https://en.wikipedia.org/wiki/System_under_test)) necessita para que funcione corretamente. É onde isolamos as dependências, configuramos _mocks_, _stubs_ e qualquer outra operação necessária (mais sobre o padrão AAA [aqui](https://www.lambda3.com.br/2010/08/testando-com-aaa-arrange-act-assert/)).
 
 Acredito que um dos principais benefícios dos testes é **comunicar de forma clara ao mundo as intenções dos componentes testados**. Quando a legibilidade do teste é baixa, o atrito para se entender o componente aumenta drasticamente.
 
@@ -93,13 +93,13 @@ public void ApplyDiscountShouldReturnCalculatedDiscount(
 <div class="tip">
   <strong>TRADE-OFF</strong>
   <p>
-    Quando utilizamos auto mocking container, perdemos a declaratividade para saber como o sistema  sob teste é criado. Perceba no código acima, que como o SUT é criado pelo Autofixture, não tenho a informação de forma clara sobre quais os passos necessários para se criar um ProductController.
+    Quando utilizamos auto mocking container, perdemos a declaratividade para saber como o sistema  sob teste é criado. Perceba no código acima, que como o SUT é criado pelo Autofixture, não tenho, de forma clara, a informação sobre quais os passos necessários para se criar um ProductController.
   </p>
   <p>
-    É necessário avaliar o enfraquecimento do <i>feedback</i> sobre o design <b>vs.</b> uma clara especificação de teste.
+    É necessário avaliar a clareza de se saber como SUTs são criados <b>vs.</b> uma clara especificação para os testes.
   </p>
 </div>
 
 ## links
 * Código Fonte: [https://github.com/chicocode/better-arrange](https://github.com/chicocode/better-arrange)
-* Foto por Martin Jenberg: [https://unsplash.com/photos/sUlEmXjrRxI](https://unsplash.com/photos/sUlEmXjrRxI)
+* Foto base por Martin Jenberg: [https://unsplash.com/photos/sUlEmXjrRxI](https://unsplash.com/photos/sUlEmXjrRxI)
