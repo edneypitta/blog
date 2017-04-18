@@ -7,8 +7,40 @@
 }
 
 @font-face {
+  font-family: 'brandon';
+  src: url('./components/font/brandon_light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'brandon';
+  src: url('./components/font/brandon_bld.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'brandon';
+  src: url('./components/font/brandon_bld_it.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'brandon';
+  src: url('./components/font/brandon_light_it.otf') format('opentype');
+  font-style: italic;
+}
+
+@font-face {
   font-family: 'cabana';
   src: url('./components/font/cabana-regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'flottflott';
+  src: url('./components/font/flottflott.ttf');
 }
 
 ::selection {
@@ -42,11 +74,11 @@ html, body {
 body {
   margin: 0;
   color: #34495e;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.6;
   background-color: #fff;
   position:relative;
-  font-family: 'sourcesanspro', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'brandon', 'Helvetica Neue', Arial, sans-serif;
 }
 
 ul {
