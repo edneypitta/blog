@@ -2,7 +2,7 @@
 title: Sobre
 route: pt-br/sobre
 ---
-<img src="/assets/chico.png" width="150">
+<img src="/assets/chico.png" width="150" class="no-shadow">
 
 Desenvolvedor por paixão, ama como a programação pode te levar a vários caminhos e infinitas possíveis soluções. Em constante busca por novas maneiras de se **criar** _software_. Também busca pela produtividade, ( ~~mas acaba na procrastinação~~ ) que vez ou outra acredita encontrar.
 
@@ -12,7 +12,7 @@ Compartilha aqui, nesse espacinho, alguns _insights_ e pensamentos que espera po
 
 O conteúdo deste blog foi gerado estaticamente utilizando
 <a href="https://facebook.github.io/react/" target="_blank">
-  <img alt="" src="/assets/react.svg" class="no-style" width="16" height="16" />
+  <img alt="" src="/assets/react.svg" class="no-style no-shadow" width="16" height="16" />
   React
 </a>
 e <a href="https://phenomic.io/" target="_blank">Phenomic</a>. Você poderá encontrar o codigo fonte [aqui](https://github.com/chicocode/chicocodeio) e mais sobre o blog [neste metapost](/pt-br/stack-do-blog/).

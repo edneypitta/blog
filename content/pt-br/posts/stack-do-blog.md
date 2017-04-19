@@ -7,7 +7,7 @@ route: /pt-br/stack-do-blog
 
 Escrever um _blog post_ já é complicado o suficiente para que tenhamos que pensar em outras variáveis como gestão do banco de dados e servidor _web_, por exemplo. Tentei aqui, simplificar o máximo possível para focar no conteúdo, ainda que a flexibilidade de edição fosse muito importante para mim.
 
-Plataformas como _medium_ são excelentes no quesito simplicidade, mas nâo tinham a flexibilidade desejada. Bem como _Wordpress_ é ótimo quando o assunto é flexibilidade, mas que vem com um _overhead_ grande.
+Plataformas como _medium_ são excelentes no quesito simplicidade, mas não possuiam a flexibilidade desejada. Bem como _Wordpress_ é ótimo quando o assunto é flexibilidade, mas que vem com um _overhead_ grande.
 
 ## developer experience & stack
 
@@ -15,7 +15,7 @@ Verificar como o post está ficando enquanto eu escrevo, deploy automatizado, e 
 
 Acabei optando por um [gerador de site estático](https://phenomic.io/) que tem como _output_ um site em React, porque acredito que as aplicações SPA fornecem a melhor experiência para o usuário/leitor.
 
-O [Netlify](https://www.netlify.com/) -sem custo algum, plano _FREE_- está integrado ao repositório hospedado no GitHub, logo quando subo uma atualização para o repositório, o site em produção é automaticamente atualizado.
+O [Netlify](https://www.netlify.com/), no plano _FREE_, está integrado ao repositório hospedado no GitHub. Logo quando subo uma atualização para o repositório, o site em produção é automaticamente atualizado.
 
 O https foi configurado através do próprio painel, e o certificado gerado pelo [Let's Encrypt](https://letsencrypt.org/), também _FREE_.
 
@@ -23,7 +23,7 @@ O https foi configurado através do próprio painel, e o certificado gerado pelo
 
 Utilizo _git branches_ para versionamento dos _posts_. Apenas conteúdos da _branch **master**_ irão para produção. A _branch **draft**_ possui o conteúdo em progresso, ainda não concluído.
 
-Tenho total liberdade sobre a estilização do conteúdo. Se algo no _markdown_ nâo me atender, posso simplesmente adicionar **Html & CSS**.
+Tenho total liberdade sobre a estilização do conteúdo. Se algo no _markdown_ não me atender, posso simplesmente adicionar **Html & CSS**.
 
 ``` html
 <div class="tip">

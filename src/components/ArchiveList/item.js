@@ -7,7 +7,7 @@ import styles from "./index.css"
 
 const Item = ({ __url, title, date }) => {
   return (
-    <div key={__url}>
+    <div key={__url} style={{ 'clear': 'both' }}>
       <Date time={date} className={styles.info} />
       <Link to={__url} className={styles.link}>
         {title}

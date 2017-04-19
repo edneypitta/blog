@@ -1,25 +1,31 @@
 .archive {
   max-width: 500px;
-  margin: 3em auto;
+  margin: -2.1em auto;
 }
+
 .item {
   padding: 2px 0 0 50px;
+  display: block;
 }
+
 .time,
 .link {
   font-size: 1rem;
+  word-break: break-all;
 }
+
 .link {
   display: block;
   margin-left: 125px;
   color: var(--color);
   word-break: break-all;
+  &:hover {
+    border-bottom: 0;
+    color: var(--colorSecondary);
+  }
 }
-.link:hover {
-  border-bottom: 0;
-  color: var(--colorSecondary);
-}
+
 .info {
   float: left;
-  width: 125px;
+  width: 120px;
 }
