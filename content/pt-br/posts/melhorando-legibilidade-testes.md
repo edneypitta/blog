@@ -22,7 +22,7 @@ Um teste com uma quantidade considerável de arrange
 [Fact]
 public void ApplyDiscountShouldReturnCalculatedDiscount()
 {
-    var productMock = new Mock<IProducts>();
+    var productMock = new Mock<IProducts>("chicocode.io");
 
     var total = 100;
     var cartMock = new Mock<ICart>();
