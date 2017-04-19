@@ -7,7 +7,7 @@ route: /pt-br/melhorando-legibilidade-testes
 
 Certas vezes me pego escrevendo testes pouco legíveis. Isso se dá na maioria das vezes quando a fase de **Arrange** fica muito grande.
 
-O Arrange é a fase inicial, onde configuramos tudo que o sistema a ser testado (também chamado de [**SUT**](https://en.wikipedia.org/wiki/System_under_test)) necessita para que funcione corretamente. É onde isolamos as dependências, configuramos _mocks_, _stubs_ e qualquer outra operação necessária (mais sobre o padrão AAA [aqui](https://www.lambda3.com.br/2010/08/testando-com-aaa-arrange-act-assert/)).
+O Arrange é a fase inicial, onde configuramos tudo que o [SUT (system under test)](https://en.wikipedia.org/wiki/System_under_test) necessita para que funcione corretamente. É onde isolamos as dependências, configuramos _mocks_, _stubs_ e qualquer outra operação necessária (mais sobre o padrão AAA [aqui](https://www.lambda3.com.br/2010/08/testando-com-aaa-arrange-act-assert/)).
 
 Acredito que um dos principais benefícios dos testes é **comunicar de forma clara ao mundo as intenções dos componentes testados**. Quando a legibilidade do teste é baixa, o atrito para se entender o componente aumenta drasticamente.
 
@@ -63,8 +63,6 @@ public void ApplyDiscountShouldReturnCalculatedDiscount()
 ```
 (código fonte do [builder](https://github.com/chicocode/better-arrange/blob/builder-pattern/Test/Builder/ProductControllerBuilder.cs) omitido para simplecidade)
 
-Além do mais, neste caso, a adição de um parâmetro ao construtor do **ProductController** não quebraria a compilação do projeto.
-
 ## auto mocking container
 
 Outra opção é utilizarmos um container para criar _Mocks_ das dependências automaticamente. Podemos utilizar [**Autofixture como um container de mocks**](http://blog.ploeh.dk/2010/08/19/AutoFixtureasanauto-mockingcontainer/) para realizar essa tarefa de uma forma fácil.
@@ -72,9 +70,8 @@ Outra opção é utilizarmos um container para criar _Mocks_ das dependências a
 [Theory]
 [AutoMoqData]
 public void ApplyDiscountShouldReturnCalculatedDiscount(
-   [Frozen]Mock<ICart> cartMock,
-   [Frozen]Mock<IDiscount> discountMock,
-   [Frozen]Mock<IProducts> products,
+   Mock<ICart> cartMock,
+   Mock<IDiscount> discountMock,
    decimal totalValue,
    ProductController sut)
 {
@@ -90,13 +87,15 @@ public void ApplyDiscountShouldReturnCalculatedDiscount(
 }
 ```
 
+Além do mais, neste caso, a adição de um parâmetro ao construtor do **ProductController** não quebraria a compilação do projeto.
+
 <div class="tip">
   <strong>TRADE-OFF</strong>
   <p>
-    Quando utilizamos auto mocking container, perdemos a declaratividade para saber como o sistema  sob teste é criado. Perceba no código acima, que como o SUT é criado pelo Autofixture, não tenho, de forma clara, a informação sobre quais os passos necessários para se criar um ProductController.
+    Quando utilizamos auto mocking container, perdemos a declaratividade para saber como o sistema  sob teste é criado. Perceba no código acima que como o SUT é criado pelo Autofixture, logo não tenho uma informação clara sobre quais os passos necessários para se criar um ProductController.
   </p>
   <p>
-    É necessário avaliar a clareza de se saber como SUTs são criados <b>vs.</b> uma clara especificação para os testes.
+    É necessário avaliar o impacto na clareza sobre como SUT serão criados.
   </p>
 </div>
 

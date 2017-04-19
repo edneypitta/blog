@@ -8,11 +8,10 @@ import styles from "./index.css"
 
 TopBarProgressIndicator.config({
   barColors: {
-    "0": "#14A697",
-    "0.25": "#F2C12E",
-    "0.50": "#F29D35",
-    "0.75": "#F27649",
-    "1.0": "#F25252"
+    "0": "#F6B1C3",
+    "0.333": "#F0788C",
+    "0.666": "#BC0D35",
+    "1": "#A20D1E"
   },
   shadowBlur: 5,
 })

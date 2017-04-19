@@ -5,13 +5,13 @@ module.exports = (config) => [
     features: {
       customProperties: {
         // colors from
-        // https://color.adobe.com/Cinnamon-Mint-color-theme-2647039/
+        // https://color.adobe.com/pink-peppermint-color-theme-109642/
         variables: {
-          color: "#14A697",
-          colorSecondary: "#0E7066",
-          colorShadow: "#0F7F74",
-          colorShadowHover: "#118A7D",
-          tip: "#F25252",
+          color: "#DE264C",
+          colorSecondary: "#BC0D35",
+          colorShadow: "#A20D1E",
+          colorShadowHover: "#870B19",
+          tip: "#F0788C",
           neutral: "#7f8c8d",
           text: "#2c3e50"
         }
