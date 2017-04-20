@@ -1,7 +1,7 @@
 ---
 title: About
 ---
-<img src="/assets/chico.png" width="150" class="no-shadow">
+<img src="/assets/chico.png" width="400" class="no-shadow">
 
 Passionate developer, loves how programming can lead you to many ways of doing the same thing and infinite possible solutions. Constantly seeking for new ways to **create** _software_. Also seeks for productivity, ( ~~but ends with procrastination~~ ) that believes find sometimes.
 

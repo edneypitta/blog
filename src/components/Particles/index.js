@@ -1,7 +1,7 @@
 import React from "react"
 
 import Particles from "react-particles-js"
-import config from "./config"
+import config from "./config.yml"
 
 import {particles} from "./index.css"
 

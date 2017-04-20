@@ -204,7 +204,15 @@ export default (config = {}) => {
           query: {
             name: "[path][name].[hash].[ext]",
             context: path.join(__dirname, config.source),
-          },
+          }
+        },
+
+        // copy post assets without hashes
+        {
+          test: /content(\/|\\).*\.(html|ico|jpe?g|png|gif)$/,
+          loader: "file-loader" +
+            "?name=[path][name].[ext]&context=" +
+            path.join(config.cwd, config.source),
         },
 
         // svg as raw string to be inlined

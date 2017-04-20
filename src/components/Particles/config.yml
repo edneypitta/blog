@@ -1,0 +1,82 @@
+particles:
+  number:
+    value: 25
+    density:
+      enable: false
+      value_area: 236.7442924896818
+  color:
+    value: "#DE264C"
+  shape:
+    type: triangle
+    stroke:
+      width: 0.1
+      color: "#BC0D35"
+    polygon:
+      nb_sides: 5
+    image:
+      src: img/github.svg
+      width: 100
+      height: 100
+  opacity:
+    value: 0.1183721462448409
+    random: true
+    anim:
+      enable: false
+      speed: 1
+      opacity_min: 0
+      sync: false
+  size:
+    value: 5
+    random: false
+    anim:
+      enable: true
+      speed: 4.795204795204795
+      size_min: 0.3
+      sync: false
+  line_linked:
+    enable: true
+    distance: 426.1397264814272
+    color: "#BC0D35"
+    opacity: 0.08
+    width: 0.8
+  move:
+    enable: true
+    speed: 0.8
+    direction: none
+    random: true
+    straight: false
+    out_mode: out
+    bounce: false
+    attract:
+      enable: false
+      rotateX: 600
+      rotateY: 600
+interactivity:
+  detect_on: canvas
+  events:
+    onhover:
+      enable: false
+      mode: grab
+    onclick:
+      enable: false
+      mode: push
+    resize: true
+  modes:
+    grab:
+      distance: 400
+      line_linked:
+        opacity: 1
+    bubble:
+      distance: 250
+      size: 0
+      duration: 2
+      opacity: 0
+      speed: 3
+    repulse:
+      distance: 400
+      duration: 0.4
+    push:
+      particles_nb: 4
+    remove:
+      particles_nb: 2
+retina_detect: true

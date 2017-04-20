@@ -2,7 +2,7 @@
 title: Sobre
 route: pt-br/sobre
 ---
-<img src="/assets/chico.png" width="150" class="no-shadow">
+<img src="/assets/chico.png" width="400" class="no-shadow">
 
 Desenvolvedor por paixão, ama como a programação pode te levar a vários caminhos e infinitas possíveis soluções. Em constante busca por novas maneiras de se **criar** _software_. Também busca pela produtividade, ( ~~mas acaba na procrastinação~~ ) que vez ou outra acredita encontrar.
 

@@ -11,8 +11,6 @@ O Arrange é a fase inicial, onde configuramos tudo que o [SUT (system under tes
 
 Acredito que um dos principais benefícios dos testes é **comunicar de forma clara ao mundo as intenções dos componentes testados**. Quando a legibilidade do teste é baixa, o atrito para se entender o componente aumenta drasticamente.
 
-![exemplo de um teste com arrange grande](/assets/{}.png)
-
 ## creational patterns
 
 [Padrões criacionais](https://en.wikipedia.org/wiki/Creational_pattern) podem ajudar com a complexidade de se criar dependências de forma mais simples, e podem diminuir a carga cognitiva associada à leitura do teste.
