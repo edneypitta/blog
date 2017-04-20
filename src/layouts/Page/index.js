@@ -50,7 +50,7 @@ const Page = (
   const BodyRender = () => {
     if (typeof(body) === 'undefined' || body.startsWith("<!-- no-content"))
       return null
-    return <BodyContainer>{body}</BodyContainer>
+    return isLoading ? <Loading /> : <BodyContainer>{body}</BodyContainer>
   }
 
   return (
@@ -61,11 +61,7 @@ const Page = (
       />
       <div>
         { header }
-        {
-          isLoading
-          ? <Loading />
-          : <BodyRender />
-        }
+        <BodyRender />
         { children }
         { footer }
       </div>
