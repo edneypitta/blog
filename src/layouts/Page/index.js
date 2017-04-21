@@ -47,10 +47,14 @@ const Page = (
     { name: "description", content: head.description },
   ]
 
-  const BodyRender = () => {
+  const BodyRender = ({loading}) => {
     if (typeof(body) === 'undefined' || body.startsWith("<!-- no-content"))
       return null
-    return isLoading ? <Loading /> : <BodyContainer>{body}</BodyContainer>
+    return loading ? <Loading /> : <BodyContainer>{body}</BodyContainer>
+  }
+
+  BodyRender.propTypes = {
+    loading: PropTypes.bool
   }
 
   return (
@@ -61,7 +65,7 @@ const Page = (
       />
       <div>
         { header }
-        <BodyRender />
+        <BodyRender loading={isLoading} />
         { children }
         { footer }
       </div>
