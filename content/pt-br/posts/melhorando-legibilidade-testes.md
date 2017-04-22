@@ -1,6 +1,6 @@
 ---
 title: Melhorando legibilidade de testes
-date: 2017-04-13 00:00.000 -3
+date: 2017-04-14 00:00.000 -3
 layout: Post
 route: /pt-br/melhorando-legibilidade-testes
 ---
