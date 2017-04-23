@@ -12,6 +12,7 @@ const ArchiveList = (props, context) => {
   const locale = getLang(context)
   const posts = enhanceCollection(context.collection, {
     filter: pg => pg.layout === "Post"
+      && (!pg.hidden || pg.hidden === false)
       && pg.__filename.startsWith(locale),
     sort: "date",
     reverse: true,

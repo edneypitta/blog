@@ -15,7 +15,8 @@ const LatestPosts = (props, context) => {
   const locale = getLang(context)
   const {archive: {name, url}} = get(context)
   const latestPosts = enhanceCollection(context.collection, {
-    filter: pg => pg.layout === "Post"
+    filter: pg => pg.layout === "Post" 
+      && (!pg.hidden || pg.hidden === false)
       && pg.__filename.startsWith(`${ locale }`),
     sort: "date",
     reverse: true,
