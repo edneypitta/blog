@@ -3,7 +3,7 @@ title: React blog
 date: 2017-04-07 00:00.000 -3
 layout: Post
 route: /pt-br/react-blog
-description: Ciando uma stack de um blog em react, gerado estaticamente, utilizando Phenomic, Netlify, SSL grátis com Let's encrypt e git para versionar posts.
+description: Ciando uma stack de um blog em react, gerado estaticamente, utilizando Phenomic, Netlify, SSL grátis com Let's encrypt e git para versionar posts
 ---
 
 Escrever um _blog post_ já é complicado o suficiente para que tenhamos que pensar em outras variáveis como gestão do banco de dados e servidor _web_, por exemplo. Tentei aqui, simplificar o máximo possível para focar no conteúdo, ainda que a flexibilidade de edição fosse muito importante para mim.

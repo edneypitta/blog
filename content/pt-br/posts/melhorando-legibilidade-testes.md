@@ -3,6 +3,7 @@ title: Melhorando legibilidade de testes
 date: 2017-04-14 00:00.000 -3
 layout: Post
 route: /pt-br/melhorando-legibilidade-testes
+description: Melhorar legibilidade de testes atuando na fase de arrange. Utilizando builders ou auto mocking containers para criar um arrange mais significativo
 ---
 
 Certas vezes me pego escrevendo testes pouco legíveis. Isso se dá na maioria das vezes quando a fase de **Arrange** fica muito grande.
