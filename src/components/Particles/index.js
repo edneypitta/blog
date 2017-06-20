@@ -6,7 +6,7 @@ import config from "./config.yml"
 import {particles} from "./index.css"
 
 //this is a linear particles number generator based on screen width
-let linearParticlesGenerator = x => 0.0205 * x - 7.3442
+let linearParticlesGenerator = x => (0.0205 * x - 7.3442) * 2
 const isClient = typeof window !== "undefined"
 
 const ParticlesContainer = () => {

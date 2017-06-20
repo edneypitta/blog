@@ -1,7 +1,7 @@
 .block .title {
   margin: 0.65em 0;
   color: var(--text);
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .block .info span {
@@ -10,13 +10,13 @@
 
 .content h2, .content h3, .content h4, .content h5, .content h6 {
   position: relative;
-  margin: 1em 0;
+  margin: .9em 0;
 }
 .content h4 a:before, .content h5 a:before, .content h6 a:before {
   content: "";
 }
 .content h2, .content h3 {
-  font-size: 26px;
+  font-size: 1em;
 }
 .content h4, .content h5, .content h6 {
   font-size: 22px;

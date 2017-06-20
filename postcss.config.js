@@ -4,14 +4,13 @@ module.exports = (config) => [
     browsers: "last 2 versions",
     features: {
       customProperties: {
-        // colors from
-        // https://color.adobe.com/pink-peppermint-color-theme-109642/
+        // colors from https://color.adobe.com/cool-one-color-theme-3403796/
         variables: {
-          color: "#DE264C",
-          colorSecondary: "#BC0D35",
-          colorShadow: "#A20D1E",
-          colorShadowHover: "#870B19",
-          tip: "#F0788C",
+          color: "#3C989E",
+          colorSecondary: "#F4CDA5",
+          colorShadow: "#5DB5A4",
+          colorShadowHover: "#519E8F",
+          tip: "#ED5276",
           neutral: "#7f8c8d",
           text: "#2c3e50"
         }

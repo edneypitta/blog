@@ -70,7 +70,7 @@ code {
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-type {
-  color: #DE264C;
+  color: #ED5276;
 }
 
 .hljs-literal,
@@ -82,7 +82,7 @@ code {
 
 .hljs-section,
 .hljs-name {
-  color: #14A697;
+  color: #3C989E;
 }
 
 .hljs-tag {
@@ -104,7 +104,7 @@ code {
 }
 
 .hljs-deletion {
-  color: #FF5656;
+  color: #ED5276;
   background-color: #ffecec;
 }
 

@@ -1,24 +1,15 @@
 particles:
   number:
-    value: 25
+    value: 50
     density:
       enable: false
-      value_area: 236.7442924896818
+      value_area: 500
   color:
-    value: "#DE264C"
+    value: ["#3C989E", "#5DB5A4", "#F4CDA5", "#F57A82", "#ED5276"]
   shape:
-    type: triangle
-    stroke:
-      width: 0.1
-      color: "#BC0D35"
-    polygon:
-      nb_sides: 5
-    image:
-      src: img/github.svg
-      width: 100
-      height: 100
+    type: circle
   opacity:
-    value: 0.1183721462448409
+    value: 0.21
     random: true
     anim:
       enable: false
@@ -36,7 +27,7 @@ particles:
   line_linked:
     enable: true
     distance: 426.1397264814272
-    color: "#BC0D35"
+    color: "#7f8c8d"
     opacity: 0.08
     width: 0.8
   move:

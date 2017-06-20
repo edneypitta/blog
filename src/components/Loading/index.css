@@ -6,7 +6,7 @@
 }
 
 :root {
-  --spinner-Color: #DE264C;
+  --spinner-Color: #F4CDA5;
   --spinner-Color-front: color(var(--spinner-Color) a(0.8));
   --spinner-Color-back: color(var(--spinner-Color) a(0.2));
 }
