@@ -49,7 +49,7 @@ class KonamiCode extends Component {
       return null
 
     return (
-      <EasterEgg keys={konamiCodeSeq} timeout={37000}>
+      <EasterEgg keys={konamiCodeSeq} timeout={30000}>
         <div className={styles.overlay} onClick={this.onClick.bind(this)} id="overlay">
           <div className={styles.container}>
             <div className={`${styles.glitch} ${styles.found}`} data-text={konami.first}>{konami.first}</div>
