@@ -49,12 +49,12 @@ class KonamiCode extends Component {
       return null
 
     return (
-      <EasterEgg keys={konamiCodeSeq} timeout={204000}>
+      <EasterEgg keys={konamiCodeSeq} timeout={37000}>
         <div className={styles.overlay} onClick={this.onClick.bind(this)} id="overlay">
           <div className={styles.container}>
             <div className={`${styles.glitch} ${styles.found}`} data-text={konami.first}>{konami.first}</div>
               <div className={`${styles.glitch} ${styles.reward}`} data-text={konami.second}>{konami.second}</div>
-              <iframe width="560" height="315" src="https://youtu.be/5dbG4wqN0rQ?autoplay=1" frameBorder="0" allowFullScreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/5dbG4wqN0rQ?autoplay=1" frameBorder="0" allowFullScreen></iframe>
               <div className={`${styles.glitch} ${styles.haveFun}`} data-text={konami.fun.shadow}>{konami.fun.text}</div>
           </div>
         </div>
