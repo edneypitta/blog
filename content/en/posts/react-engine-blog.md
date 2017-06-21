@@ -18,7 +18,7 @@ Free SSL by [Let's Encrypt][https://letsencrypt.org/].
 
 Code hosted on [Github][https://github.com/chicocode/chicocodeio].
 
-Free website hosting by [Netlify][https://www.netlify.com/] _(deploy updating github!)_.
+Free website hosting by [Netlify][https://www.netlify.com/]. _(deploy updating github source code!)_
 
 Comments by [Disqus][https://disqus.com/].
 
@@ -30,4 +30,4 @@ Writing
 Development
 ![development experience](/assets/dev.gif)
 
-The frameworks is extensible and the writing experience is good enough!
+The frameworks is extensible and the writing experience is good enough.
