@@ -54,7 +54,7 @@ class KonamiCode extends Component {
           <div className={styles.container}>
             <div className={`${styles.glitch} ${styles.found}`} data-text={konami.first}>{konami.first}</div>
               <div className={`${styles.glitch} ${styles.reward}`} data-text={konami.second}>{konami.second}</div>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameBorder="0" allowFullScreen></iframe>
+              <iframe width="560" height="315" src="https://youtu.be/5dbG4wqN0rQ?autoplay=1" frameBorder="0" allowFullScreen></iframe>
               <div className={`${styles.glitch} ${styles.haveFun}`} data-text={konami.fun.shadow}>{konami.fun.text}</div>
           </div>
         </div>
