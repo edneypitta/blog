@@ -27,7 +27,8 @@ class Post extends Component {
       return
 
     setTimeout(() => {
-       const id = this.context.location.hash.replace('#', '')
+       const hash = this.context.location.hash.replace('#', '') 
+       const id = decodeURI(hash)
        const element = document.getElementById(id)
        if (element) element.scrollIntoView()
      }, 200);
