@@ -8,12 +8,15 @@
   margin-left: 0.5rem;
 }
 
-.content h2, .content h3, .content h4, .content h5, .content h6 {
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
   position: relative;
   margin: .9em 0;
 }
 .content h4 a:before, .content h5 a:before, .content h6 a:before {
   content: "";
+}
+.content h1 {
+  font-size: 1.15em;
 }
 .content h2, .content h3 {
   font-size: 1em;
