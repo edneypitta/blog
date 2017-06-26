@@ -1,40 +1,40 @@
 ---
 title: O caminho para programação funcional
-date: 2017-04-07 00:00.000 -3
+date: 2017-06-16 00:00.000 -3
 layout: Post
 comments: true
 description: Aprender um novo paradigma pode ser frustrante, às vezes. Entender como chegar lá não é uma tarefa fácil. Compartilho aqui, o que funcionou para mim, e como faço para aprender FP.
 ---
 
-My first contact with functional programming was with Haskell. I was amazed about the functional world. About how I had to think differently to solve a trivial problem like fibonacci or even sum a list of integers. Thanks a lot to **Mario Leston Rey** from bottom of my heart for this and other awesome teachings.
+Meu primeiro contato com programação funcional foi com Haskell. Eu fiquei maravilhado com o mundo funcional. Em como eu teria que pensar totalmente diferente para resolver um problema trivial como fibonacci ou até mesmo somar uma lista de inteiros. Muito obrigado ao **Mario Leston Rey**, de coração, por esses e muitos outros ensinamentos valiosos.
 
-But the sad truth is that I didn't care. I kept my studies in C# and JS, beyond the graduation  subjects of computer science. Haskell was so distant from my day a day web development, that I thought FP was only to improve my algorithmic skills. This was around 2012.
+Mas a triste verdade é que não liguei. Continuei com meu estudos em C# e JS, além das matérias de graduação em ciência da computação. Haskell era tão distante do meu dia a dia em desenvolvimento _web_ que eu pensei que FP era somente para melhorar minhas habilidades em algorítmo. Isso foi por volta de 2012.
 
-Many things happened since then. Functional programming was increasingly gained traction. A lot of languages was born or just emerged. Functional approaches was incorporated in languages, frameworks with strongly functional bias was raised. So I read a great [post](https://medium.com/@jugoncalves/functional-programming-should-be-your-1-priority-for-2015-47dd4641d6b9) from [Ju Gonçalves](https://twitter.com/cyberglot) in 2015 that made me go back to study functional again.
+Muitas coisas aconteceram desde então. Programação funcional ganhou muita tração. Muitas linguagens surgiram ou simplesmente emergiram. Abordagens funcionais foram incorporadas nas linguagens, _frameworks_ baseados em conceitos funcionais nasceram. Foi então, em 2015, que li um ótimo [artigo](https://medium.com/@jugoncalves/functional-programming-should-be-your-1-priority-for-2015-47dd4641d6b9) da [Ju Gonçalves](https://twitter.com/cyberglot) que me fez voltar a estudar funcional.
 
-So this time I had to try something less academic, and more real world. Scala was the way to go. I started the creator's [course](https://pt.coursera.org/learn/progfun1) on coursera, but I was lost in few weeks. All the things, in some way, were really abstract to me. Unfortunately I gave up again.
+Dessa vez não cometeria o mesmo erro, tive que tentar algo menos acadêmico. Scala foi a linguaguem escolhida. Começei o [curso](https://pt.coursera.org/learn/progfun1) do criado no _coursera_, mas eu estava perdido em algumas semanas. De alguma forma, tinham muitas coisas abstratas para mim. Infelizmente desisti novamente.
 
-# the path
+# o caminho
 
-So how I really started to learn functional programming? I wont't give a recipe, like _"set clear goals"_, _"manage your time"_, etc. I don't think they really help. But I will say what exactly worked for me.
+Então como começei realmente a aprender programação funcional? Não darei uma receita, como "defina objetivos claros", "gerencie seu tempo", etc. Eu não acredito que eles ajudem muito. Mas falarei exatamente o que funcionou para mim.
 
-If you are like me, the guy who loves the many javascript frameworks, or being productive with new tools that you have just discovered, probably you will get frustrated. The learning curve is high.
+Se você é como eu, um cara que ama os várias _frameworks_ javascript, or ser produtivo com uma ferramenta que você acabou de descobrir, provavelmente você se frustará em algum momento. A curva de aprendizado é bem alta.
 
-Ju Gonçalves already said that, in the previous post
+Ju Gonçalves já disse isso no artigo que mencionei
 
 > Every thing is hard at first. I'm sure you've struggled to learn how to program and even to learn OOP. Probably start doing something in OOP was way easier than your first program. Mainly because you're already familiar with some common idioms, like variable declaration and for/while loops. <br/><br/>
 > For starting with FP, it's almost like starting to learn how to program again, from scratch (depending on which language you'd start, it'll be definitely like starting over again).
 
-But I'm going to emphasize, to learn a new paradigm is hard. Is like learning a new language, from another country, with other cultures, you have to learn from scratch, you won't be able to do simple tasks, and will be boring at first.
+Mas vou ser enfático, aprender um novo paradigma é difícil. É como aprender uma nova linguagem, de outro país, com outras culturas. Você terá que aprender desde o começo, e não será capaz de fazer tarefas simples inicialmente.
 
-Understand this barrier will be the first step to understand whatever new paradim you want to learn, including FP. You can seek for ways to make the path easier. It is up to you.
+Entender essa barreira será o primeiro passo para aprender um novo paradigma, qualquer que seja, incluindo FP. Você poderá procurar maneiras para tornar esse caminho menos doloroso. Mas somente você que saberá como.
 
-I was loathe to choose F#, because I thought another platform could give me more learnings, but what I didn't realize is that another paradigm is mind blowing enough. 
+Estava relutante em escolher F# porque pensei que outra plataforma poderia me proporcionar maiores aprendizados, mas o que não percebi foi que um novo paradigma era o suficiente para me manter ocupado nos estudos durante um bom tempo.
 
-In other words, my advice is to stay with the closest you know, **you should be confortable with the languague**. Choose an hybrid languague that enforces functional but accepts OO so you can **always start with OO implementation and gradually evolve towards a functional approach**.
+Em outras palavras, meu conselho é para ficar com o mais próximo do que você conheçe, **você deverá estar confortável com a linguagem**. Preferencialmente, escolha uma linguagem híbrida que foque o paradigma funcional, porém aceite OO. Assim poderá **sempre começar com uma implemetação OO, mas evoluir gradativamente para uma abordagem funcional**.
 
-Last but not least, make a simple project where you can practice often as you learn. I chose a little [quake log parser](https://github.com/chicocode/quake-parser). I am still on my way to improve it.
+Por último, mas não menos importante, faça um simples projeto onde possa praticar frequentemente o que aprender durante os estudos. Escolhi um [parser de log do quake](https://github.com/chicocode/quake-parser). Ainda estou no meu caminho para melhorá-lo!
 
-That's all! I am not a great F# developer nor functional expert, but that's what worked for me. And maybe this post can help you find your own path to functional programming.
+Não sou um ótimo desenvolvedor F# ou _expert_ em linguagem funcional, mas isso é o que está funcionado para mim. Talvez possa lhe ajudar de alguma forma, para que também possa encontrar o seu caminho para realmente aprender programção funcional.
 
-Thanks! _Feedbacks are very welcome!_
+Obrigado! _Feedbacks são bem bindos :)_

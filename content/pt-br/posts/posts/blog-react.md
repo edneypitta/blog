@@ -1,6 +1,6 @@
 ---
 title: Phenomimc - Um blog em react
-date: 2017-04-07 00:00.000 -3
+date: 2017-09-09 00:00.000 -3
 layout: Post
 comments: true
 description: Phenomic é um framework baseado em react para criação de conteúdo html & css estático. Basicamente utiliza webpack e seus loaders para criar um website em react. Outras ferramentas que fazem parte da  stack são Let's encrypt, github, netlify e disqus
