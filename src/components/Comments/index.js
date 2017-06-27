@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React, { Component, PropTypes } from "react"
 
 import Comment from './Comment'
 import Button from '../Button'
@@ -10,6 +10,10 @@ class Comments extends Component {
   constructor(props) {
     super(props)
     this.state = { comments: [], page: 1 }
+  }
+
+  static propTypes = {
+    head: PropTypes.object.isRequired
   }
 
   loadCommentsFromGithub() {

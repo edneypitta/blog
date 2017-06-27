@@ -16,8 +16,11 @@ const Comment = (props) => {
   </li>)
 }
 
-// Comment.propTypes = {
-//   id: PropTypes.number.isRequired
-// }
+ Comment.propTypes = {
+   id: PropTypes.number.isRequired,
+   user: PropTypes.object.isRequired,
+   created_at: PropTypes.instanceOf(Date).isRequired,
+   body_html: PropTypes.string.isRequired
+ }
 
 export default Comment
