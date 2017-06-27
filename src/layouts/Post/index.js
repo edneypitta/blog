@@ -1,11 +1,8 @@
 import React, { Component, PropTypes } from "react"
 
-import DisqusThread from "react-disqus-thread"
-
 import Page from "../Page"
+import Comments from "../../components/Comments"
 import Date from "../../components/Date"
-
-import {getFromContext as get} from "../../i18n/get"
 
 import styles from "./index.css"
 const isClient = typeof window !== "undefined"
@@ -35,8 +32,7 @@ class Post extends Component {
   }
 
   render() {
-    const {props, context} = this
-    let i18n = get(context)
+    const {props} = this
     return (
         <div>
             <article className={styles.block}>
@@ -48,11 +44,7 @@ class Post extends Component {
             </article>
             {
               props.head.comments &&
-              <DisqusThread
-                shortname={i18n.disqus.shortname}
-                identifier={`${context.metadata.pkg.homepage}${props.__url}`}
-                url={`${context.metadata.pkg.homepage}${props.__url}`}
-              />
+              <Comments { ...props } />
             }
         </div>
     )

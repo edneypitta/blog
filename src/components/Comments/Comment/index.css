@@ -1,0 +1,32 @@
+.comment {
+  list-style: none;
+}
+
+.avatar {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+}
+
+.description {
+  vertical-align: top;
+}
+
+.description strong {
+  vertical-align: top;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.date {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.body {
+  margin-top: 0px;
+}
+
+.body p {
+  margin-top: 0px;
+}

@@ -1,26 +1,27 @@
 ---
 title: Phenomimc - Um blog em react
-date: 2017-09-09 00:00.000 -3
+date: 2017-06-09 00:00.000 -3
 layout: Post
 comments: true
-description: Phenomic é um framework baseado em react para criação de conteúdo html & css estático. Basicamente utiliza webpack e seus loaders para criar um website em react. Outras ferramentas que fazem parte da  stack são Let's encrypt, github, netlify e disqus
+issue: 1
+description: Phenomic é um framework baseado em react para criação de conteúdo html & css estático. Basicamente utiliza webpack e seus loaders para criar um website em react. Outras ferramentas que fazem parte da  stack são Let's encrypt, github, netlify e github issues
 ---
 
 Este é o lugar onde espero compartilhar algumas ideias. Eu procurava uma boa experiência em _escrita & desenvolvimento_, enquanto o design deveria ser simples e elegante. Minhas habilidades de escrita não são tão boas quanto gostaria, mas farei o meu melhor para trazer o máximo de conteúdo.
 
 ## stack 
 
-Este blog é gerado como conteúdo estático por um framework chamado [Phenomic][https://phenomic.io/]. Ele basicamente utiliza webpack e seus _loaders_ para criar um website em react.
+Este blog é gerado como conteúdo estático por um framework chamado [Phenomic](https://phenomic.io/). Ele basicamente utiliza webpack e seus _loaders_ para criar um website em react.
 
-O tema foi fortemente baseado em um outro tema incrível chamado [apollo theme][https://github.com/pinggod/hexo-theme-apollo] para hexo.
+O tema foi fortemente baseado em um outro tema incrível chamado [apollo theme](https://github.com/pinggod/hexo-theme-apollo) para hexo.
 
-SSL grátis por [Let's Encrypt][https://letsencrypt.org/].
+SSL grátis por [Let's Encrypt][https://letsencrypt.org/).
 
-Código hospedado no [Github][https://github.com/chicocode/chicocodeio].
+Código hospedado no [Github](https://github.com/chicocode/chicocodeio).
 
-Website hospedado gratuitamento por [Netlify][https://www.netlify.com/]. _(deploy atualizando código fonte no github!)_
+Website hospedado gratuitamento por [Netlify](https://www.netlify.com/). _(deploy atualizando código fonte no github!)_
 
-Comentários por [Disqus][https://disqus.com/].
+Comentários por [_issues_ no Github](http://donw.io/post/github-comments/).
 
 ## experiência
 

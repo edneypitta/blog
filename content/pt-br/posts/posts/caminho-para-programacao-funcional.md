@@ -2,8 +2,9 @@
 title: O caminho para programação funcional
 date: 2017-06-16 00:00.000 -3
 layout: Post
+issue: 2
 comments: true
-description: Aprender um novo paradigma pode ser frustrante, às vezes. Entender como chegar lá não é uma tarefa fácil. Compartilho aqui, o que funcionou para mim, e como faço para aprender FP.
+description: Aprender um novo paradigma pode ser frustrante, às vezes. Entender como chegar lá não é uma tarefa fácil. Compartilho aqui, o que funcionou para mim, e como faço para aprender FP
 ---
 
 Meu primeiro contato com programação funcional foi com Haskell. Eu fiquei maravilhado com o mundo funcional. Em como eu teria que pensar totalmente diferente para resolver um problema trivial como fibonacci ou até mesmo somar uma lista de inteiros. Muito obrigado ao **Mario Leston Rey**, de coração, por esses e muitos outros ensinamentos valiosos.

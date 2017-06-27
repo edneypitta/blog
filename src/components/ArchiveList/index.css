@@ -16,7 +16,7 @@
 
 .link {
   display: block;
-  margin-left: 125px;
+  margin-left: 145px;
   color: var(--color);
   word-break: break-all;
   &:hover {
