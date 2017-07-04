@@ -1,7 +1,7 @@
 ---
 title: Primeiros passos com F#
 date: 2017-06-30 00:00.000 -3
-layout: Post
+layout: Draft
 description: Primeiros passos com F# construções básicas e ajudar na familiarização de uma sintaxe básica e entender alguns conceitos do F#
 ---
 
@@ -91,7 +91,7 @@ let main argv =
     0
 ```
 
-Se tudo der certo, na sua tela vocé verá
+Se tudo der certo, quando executar a aplicação, vocé verá
 ```bash
 [||]
 O resultado é: 42

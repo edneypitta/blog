@@ -38,4 +38,4 @@ Por último, mas não menos importante, faça um simples projeto onde possa prat
 
 Não sou um ótimo desenvolvedor F# ou _expert_ em linguagem funcional, mas isso é o que está funcionado para mim. Talvez possa lhe ajudar de alguma forma, para que também possa encontrar o seu caminho para realmente aprender programção funcional.
 
-Obrigado! _Feedbacks são bem bindos :)_
+Obrigado! _Feedbacks são bem vindos :)_
