@@ -13,11 +13,11 @@ Mas a triste verdade é que não liguei. Continuei com meu estudos em C# e JS, a
 
 Muitas coisas aconteceram desde então. Programação funcional ganhou muita tração. Muitas linguagens surgiram ou simplesmente emergiram. Abordagens funcionais foram incorporadas nas linguagens, _frameworks_ baseados em conceitos funcionais nasceram. Foi então, em 2015, que li um ótimo [artigo](https://medium.com/@jugoncalves/functional-programming-should-be-your-1-priority-for-2015-47dd4641d6b9) da [Ju Gonçalves](https://twitter.com/cyberglot) que me fez voltar a estudar funcional.
 
-Dessa vez não cometeria o mesmo erro, tive que tentar algo menos acadêmico. Scala foi a linguaguem escolhida. Começei o [curso](https://pt.coursera.org/learn/progfun1) do criado no _coursera_, mas eu estava perdido em algumas semanas. De alguma forma, tinham muitas coisas abstratas para mim. Infelizmente desisti novamente.
+Dessa vez não cometeria o mesmo erro, tive que tentar algo menos acadêmico. Scala foi a linguaguem escolhida. Comecei o [curso](https://pt.coursera.org/learn/progfun1) do criado no _coursera_, mas eu estava perdido em algumas semanas. De alguma forma, tinham muitas coisas abstratas para mim. Infelizmente desisti novamente.
 
 # o caminho
 
-Então como começei realmente a aprender programação funcional? Não darei uma receita, como "defina objetivos claros", "gerencie seu tempo", etc. Eu não acredito que eles ajudem muito. Mas falarei exatamente o que funcionou para mim.
+Então como comecei realmente a aprender programação funcional? Não darei uma receita, como "defina objetivos claros", "gerencie seu tempo", etc. Eu não acredito que eles ajudem muito. Mas falarei exatamente o que funcionou para mim.
 
 Se você é como eu, um cara que ama os várias _frameworks_ javascript, or ser produtivo com uma ferramenta que você acabou de descobrir, provavelmente você se frustará em algum momento. A curva de aprendizado é bem alta.
 
