@@ -42,10 +42,10 @@ Comparado a uma linguagem imperativa, geralmente se utiliza menos linhas de cód
 ## declaratividade para prevenção à erros
 F# possui um poderoso sistema de tipos que permite ser explicitamente declarativo sobre as expressões desenvolvidas. Assim, é possível prevenir Null Reference Exceptions de forma mais fácil.
 ```fs
-let rs = LerArquivo caminho
-match rs with
-  | Success arquivo -> printfn "Arquivo: %A" arquivo
-  | Fail -> printfn "Arquivo não encontrado"
+let resultado = LerArquivo caminho
+match resultado with
+  | Sucesso arquivo -> printfn "Arquivo encontrado: %A" arquivo
+  | Falha -> printfn "Arquivo não encontrado"
 ```
 Não se incomode caso não tenha entendido esse código 100%. O importante é entender que a função LerArquivo poderá retornar um resultado de Sucesso ou de Fracasso.
 
@@ -63,7 +63,7 @@ A facilidade em desenvolver sistemas concorrentes é um atributo da programção
 
 F# também tem suporte direto para fila de mensagens:
 ```fs
-let handleInbox inbox = 
+let processarInbox inbox = 
   let rec loop() = async {
         let! msg = inbox.Receive()
         printfn "mensagem é: %s" msg
@@ -71,7 +71,7 @@ let handleInbox inbox =
         }
   loop()
 
-let agente = MailboxProcessor.Start handleInbox
+let agente = MailboxProcessor.Start processarInbox
 ``` 
 
 ## interoperabilidade com C#/ integração com ecossistema .NET
@@ -84,9 +84,9 @@ use cmd = new SqlCommandProvider<"
         SELECT TOP(@topN) Nome, Sobrenome
         FROM Clientes
         WHERE Id = @id
-        " , connectionString>(connectionString)
+        " , conexao>(conexao)
 
-    cmd.Execute(topN = 3L, id = 235L) |> printfn "%A"
+cmd.Execute(topN = 3L, id = 235L) |> printfn "%A"
 ```
 Os valores topN e id são definidos em tempo de compilação gerados pelo type provider do SQL em SqlCommandProvider.
 
