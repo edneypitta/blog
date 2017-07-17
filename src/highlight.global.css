@@ -12,7 +12,15 @@ pre {
 }
 
 code {
+  color: #ED5276;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+pre 
+code {
   color: #525252;
+  white-space: inherit;
   margin: 1em 0;
   border-radius: 2px;
   line-height: 1.7em;
