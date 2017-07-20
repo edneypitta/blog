@@ -67,11 +67,10 @@ soma([1;2;3]) <=>
 Por qual valor você substituiria `soma([])` para que a expressão `4 + soma([])` seja igual a `4`? Isso mesmo, zero! 
 
 A condição para verificarmos se o array está vazio é chamado de critério de parada da recursão. Ela é responsável por parar a árvore de chamadas da função recursiva. A implementação da soma, agora considerando array vazio será:
-```diff
+```fs
 let rec soma nums = 
-+   if Array.length nums = 0 then 0
-+   else Array.head nums + soma (Array.tail nums)
--   Array.head nums + soma (Array.tail nums)
+   if Array.length nums = 0 then 0
+   else Array.head nums + soma (Array.tail nums)
 ```
 Agora temos uma função que soma os valores de um array corretamente! `soma [|1;2;3|]` retornará corretamente `6`. 
   
@@ -176,7 +175,7 @@ Pronto! Agora temos uma função que está alinhada com conceitos funcionais e c
 Mas, transformações e somas em listas parecem problemas comuns. Será que já não existe uma implementação padrão?
 
 ## Implementação funcional final
-Como dito [neste post](http://localhost:3333/pt-br/posts/porque-aprender-fsharp/), o processamento de listas é algo natural e muito mais fácil de se fazer em linguagens funcionais. 
+Como dito [neste post](https://chicocode.io/pt-br/posts/porque-aprender-fsharp/), o processamento de listas é algo natural e muito mais fácil de se fazer em linguagens funcionais. 
 
 Para somarmos os valores de um array basta chamar `Array.sum`. Para aplicar transformações basta chamarmos `Array.map`. A implementação final ficará assim:
 ```fs
