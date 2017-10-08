@@ -17,7 +17,6 @@ class Comments extends Component {
   }
 
   loadCommentsFromGithub() {
-    //let req = new Request(`https://api.github.com/repos/dwilliamson/donw.io/issues/${this.props.head.issue}/comments?page=${this.state.page}`, {
     let req = new Request(`https://api.github.com/repos/chicocode/chicocodeio/issues/${this.props.head.issue}/comments?page=${this.state.page}`, {
       headers: new Headers({
         'Accept': 'application/vnd.github.v3.html+json'

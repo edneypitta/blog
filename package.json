@@ -1,11 +1,10 @@
 {
   "private": true,
-  "name": "chicocodeio",
-  "homepage": "https://chicocode.io",
-  "twitter": "",
-  "repository": "",
-  "github": "https://github.com/chicocode",
-  "googleAnalyticsUA": "UA-96776324-1",
+  "name": "edneypitta",
+  "homepage": "https://edneypitta.com/",
+  "twitter": "https://twitter.com/edneypitta",
+  "github": "https://github.com/edneypitta/blog",
+  "googleAnalyticsUA": "UA-66613004-3",
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",
     "lint:css": "stylelint \"src/**/*.css\"",
