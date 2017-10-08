@@ -1,5 +1,5 @@
 ---
-title: chicocode.io
+title: Edney Pitta
 layout: Homepage
 ---
 <!-- no-content

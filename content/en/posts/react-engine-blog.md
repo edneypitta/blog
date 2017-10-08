@@ -1,7 +1,7 @@
 ---
 title: Phenomimc - A react engine blog
 date: 2017-06-09 00:00.000 -3
-layout: Post
+layout: Draft
 comments: true
 issue: 3
 description: Phenomic is a react based engine to create static html & css content. Basically rely on webpack and loaders to generate a website in React. Other tools that integrate the stack are Let's encrypt, github, netlify and github issues

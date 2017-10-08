@@ -1,7 +1,7 @@
 ---
 title: Por que aprender F# ?
 date: 2017-06-30 00:00.000 -3
-layout: Post
+layout: Draft
 comments: true
 issue: 5
 description: Apresentação das principais motivações que me leveram a estudar F#.  O objetivo não é explicar funcionalidades ou teorias nesse momento, mas sim apresentar alguns conceitos chaves e vantagens que o F# traz para o desenvolvimento.

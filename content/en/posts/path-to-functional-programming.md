@@ -1,7 +1,7 @@
 ---
 title: The path to functional programming
 date: 2017-06-16 00:00.000 -3
-layout: Post
+layout: Draft
 comments: true
 issue: 4
 description: Learn a new paradigm like functional programming can be frustating sometimes. Undersand how you can get there is not easy. I share in this post what worked for me, and how I'm making my own path to learn FP

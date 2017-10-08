@@ -1,7 +1,7 @@
 ---
 title: Revisitando a soma dos quadrados em F#
 date: 2017-07-20 00:00.000 -3
-layout: Post
+layout: Draft
 comments: true
 issue: 6
 description: Como partir de uma abordagem imperativa de soma dos quadrados para uma abordagem funcional através passos. O intuito é aprender como pensar de modo funcional, e não apenas apresentar a solução funcional de um problema.

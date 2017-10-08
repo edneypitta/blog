@@ -1,7 +1,7 @@
 ---
 title: O caminho para programação funcional
 date: 2017-06-16 00:00.000 -3
-layout: Post
+layout: Draft
 issue: 2
 comments: true
 description: Aprender um novo paradigma pode ser frustrante, às vezes. Entender como chegar lá não é uma tarefa fácil. Compartilho aqui, o que funcionou para mim, e como faço para aprender FP
