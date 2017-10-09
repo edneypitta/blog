@@ -6,10 +6,10 @@ module.exports = (config) => [
       customProperties: {
         // colors from https://color.adobe.com/cool-one-color-theme-3403796/
         variables: {
-          color: "#3C989E",
-          colorSecondary: "#F4CDA5",
-          colorShadow: "#5DB5A4",
-          colorShadowHover: "#519E8F",
+          color: "#EF5411",
+          colorSecondary: "#FF6517",
+          colorShadow: "#FF822E",
+          colorShadowHover: "#FF6D1F",
           tip: "#ED5276",
           neutral: "#7f8c8d",
           text: "#2c3e50"

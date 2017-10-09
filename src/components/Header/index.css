@@ -1,36 +1,23 @@
 .header {
   min-height: 60px;
-
-  @media (--large) {
-    padding: 20px 100px;
-  }
-
-  @media (--small) {
-    padding: 20px 0;
-  }
+  padding: 20px 0;
 }
 
 .logo {
-  float: left;
-  font-family: 'cabana';
-  letter-spacing: 3pt;
-  display: inline-block;
-  padding-top: 6.5px;
-  margin-left: -15px;
-  font-weight: bold;
-  font-size: 32px;
+  font-family: 'Grand Hotel';
+  font-size: 42px;
+  letter-spacing: 1px;
+  color: var(--color);
 
   @media (--small) {
-    float: none;
     display: block;
     text-align: center;
   }
-}
 
-.info {
-  color: var(--neutral)
+  &:active, &:hover{
+    color: var(--colorSecondary);    
+  }
 }
-
 .logo img {
   height: 60px;
 }
@@ -55,7 +42,7 @@
 
   margin: 0;
   list-style-type: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
 
   @media (--small) {
     padding: 10px 10px;

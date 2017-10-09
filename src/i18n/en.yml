@@ -8,10 +8,10 @@
   noPosts: No posts yet.
   archive:
     name: Archive
-    url: /en/archive
+    url: /archive
   about:
     name: About
-    url: /en/about
+    url: /about
   months:
     - January
     - February

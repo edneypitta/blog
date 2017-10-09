@@ -1,6 +1,6 @@
 .block .title {
   margin: 0.65em 0;
-  color: var(--text);
+  color: var(--color);
   font-size: 1.2em;
 }
 
@@ -9,6 +9,7 @@
 }
 
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+  color: var(--colorSecondary);
   position: relative;
   margin: .9em 0;
 }

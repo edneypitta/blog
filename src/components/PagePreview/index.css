@@ -1,12 +1,15 @@
 .title {
   margin: 0.65em 0;
-  color: var(--text);
   font-size: 1.2em;
 }
 
 .link {
-   &:hover {
+  color: var(--color);
+  &:hover {
     border-bottom: 2px solid var(--color);
+  }
+  &:active {
+    color: var(--color);
   }
 }
 
@@ -21,4 +24,7 @@
 
 .readMore {
   color: var(--color);
+  &:active {
+    color: var(--color);
+  }
 }
