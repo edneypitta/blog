@@ -3,13 +3,21 @@ import { Link } from "phenomic"
 
 import styles from "./index.css"
 
+import get from "../../i18n/get"
+
 const Header = (props, context) => {
+  const { about } = get(props, context)
   return (
     <header className={styles.header}>
       <Link className={styles.logo} to='/' >
         edney pitta
       </Link>
       <ul className={styles.nav}>
+        <li>
+          <Link activeClassName={styles.active} to={about.url} >
+            {about.name}
+          </Link>
+        </li>
         <li>
           {
             context.metadata.pkg.github &&

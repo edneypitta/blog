@@ -10,7 +10,7 @@
     name: Archive
     url: /archive
   about:
-    name: About
+    name: about me
     url: /about
   months:
     - January

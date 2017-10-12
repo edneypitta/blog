@@ -4,4 +4,6 @@ route: /about
 ---
 <img src="/assets/me.jpg" style="border-radius: 80px;">
 
-I'm a full stack web and mobile developer. Experienced with automated tests and continuous integration/deployment. Well-versed in agile development methods. Interested in machine learning and data science.
+Hi! I'm Edney Pitta, a full stack web and mobile developer with 5 years of experience.
+
+I work in São Paulo at Lambda3 building web applications with React and .NET Core and am also a freelancer.
