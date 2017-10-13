@@ -56,6 +56,7 @@ Thanks for reading!
 ## References and further reading
 
 - [Ryan Dahl interview](https://www.mappingthejourney.com/single-post/2017/08/31/episode-8-interview-with-ryan-dahl-creator-of-nodejs/)
+- [HN discussion](https://news.ycombinator.com/item?id=15140669)
 - [Node's first presentation](https://www.youtube.com/watch?v=ztspvPYybIY)
 - [Rob Pike's (Go) excellent talk Concurrency Is Not Parallelism](https://www.youtube.com/watch?v=cN_DpYBzKso)
 - [Rob Pike's talk Go Concurrency Patterns](https://www.youtube.com/watch?v=f6kdp27TYZs)
