@@ -19,12 +19,14 @@ const Header = (props, context) => {
           </Link>
         </li>
         <li>
-          {
-            context.metadata.pkg.github &&
-            <Link to={context.metadata.pkg.github} target="_blank" >
-              {"github"}
-            </Link>
-          }
+          <Link to={context.metadata.pkg.github} target="_blank" >
+            <i className="fa fa-github fa-lg" aria-hidden="true"></i>
+          </Link>
+        </li>
+        <li>
+          <Link to={context.metadata.pkg.twitter} target="_blank" >
+            <i className="fa fa-twitter fa-lg" aria-hidden="true"></i>
+          </Link>
         </li>
       </ul>
     </header>

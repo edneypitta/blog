@@ -138,6 +138,7 @@
   },
   "dependencies": {
     "css-emojis": "^0.1.0",
+    "font-awesome": "^4.7.0",
     "normalize.css": "^5.0.0",
     "react-disqus-thread": "^0.4.0",
     "react-easter": "^1.0.6",

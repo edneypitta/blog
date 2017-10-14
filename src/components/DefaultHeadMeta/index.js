@@ -5,28 +5,29 @@ import Helmet from "react-helmet"
 const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
   <div hidden>
     <Helmet
-      link={[{ "rel": "icon", "href": favicon }]}
+      link={[
+        { rel: "icon", "href": favicon },
+        { rel: 'stylesheet', type: 'text/css', 'href': 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' }]}
       meta={[
-          {
-            name: "generator", content: `${
-            process.env.PHENOMIC_NAME } ${ process.env.PHENOMIC_VERSION }`,
-          },
-          { property: "og:site_name", content: pkg.name },
-          { name: "twitter:site", content: `@${ pkg.twitter }` },
-          ...props.meta ? props.meta : [],
+        {
+          name: "generator", content: `${
+          process.env.PHENOMIC_NAME} ${process.env.PHENOMIC_VERSION}`,
+        },
+        { property: "og:site_name", content: pkg.name },
+        { name: "twitter:site", content: `@${pkg.twitter}` },
+        ...props.meta ? props.meta : [],
       ]}
-      script={ [
+      script={[
         { src: "https://cdn.polyfill.io/v2/polyfill.min.js" },
         ...props.scripts ? props.scripts : [],
-      ]}
-    />
-    { /* meta viewport safari/chrome/edge */ }
+      ]} />
+    { /* meta viewport safari/chrome/edge */}
     <Helmet
       meta={[{
         name: "viewport", content: "width=device-width, initial-scale=1",
       }]}
     />
-    <style>{ "@-ms-viewport { width: device-width; }" }</style>
+    <style>{"@-ms-viewport { width: device-width; }"}</style>
   </div>
 )
 
