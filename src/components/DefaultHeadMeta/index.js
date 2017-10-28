@@ -15,6 +15,7 @@ const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
         },
         { property: "og:site_name", content: pkg.name },
         { name: "twitter:site", content: `@${pkg.twitter}` },
+        { name: "google-site-verification", content: 'XUT3m38GX9EnaB-RlaMc6ps2OHCCmhdluRkTHJpkQPg' },
         ...props.meta ? props.meta : [],
       ]}
       script={[
