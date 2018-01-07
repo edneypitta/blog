@@ -2,7 +2,6 @@ import React, { Component, PropTypes } from "react"
 
 import Page from "../Page"
 import Comments from "../../components/Comments"
-import Date from "../../components/Date"
 
 import styles from "./index.css"
 const isClient = typeof window !== "undefined"
@@ -37,7 +36,6 @@ class Post extends Component {
         <div>
             <article className={styles.block}>
                 <h1 className={styles.title}>{ props.head.title }</h1>
-                <Date time={ props.head.date } />
                 <div className={styles.content}>
                    <Page {...props} />
                 </div>

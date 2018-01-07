@@ -12,7 +12,7 @@ const LatestPosts = (props, context) => {
     filter: pg => pg.layout === "Post" 
       && (!pg.hidden || pg.hidden === false)
       && pg.__filename.startsWith(`${ locale }`),
-    sort: "date",
+    sort: "order",
     reverse: true,
   })
   .slice(0, props.numberOfPosts || defaultNumberOfPosts)

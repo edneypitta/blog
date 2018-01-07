@@ -4,7 +4,6 @@ import { Link } from "phenomic"
 import styles from "./index.css"
 
 import {getFromContext as get} from "../../i18n/get"
-import Date from "../Date"
 
 const PagePreview = ({ __url, title, date, description }, context) => {
   const i18n = get(context)
@@ -16,9 +15,6 @@ const PagePreview = ({ __url, title, date, description }, context) => {
           { title }
         </Link>
       </h2>
-      <div className={styles.info}>
-        <Date time={date} />
-      </div>
       <p> { description } <br /> </p>
       <Link to={ __url } className={styles.readMore}>
           { `... ${ i18n.more }` }

@@ -1,7 +1,7 @@
 ---
 title: On Node.js, Go and concurrency
 route: on-node-go-concurrency
-date: 2017-10-13 00:00.000 -3
+order: 1
 layout: Post
 description: Why would Ryan Dahl, creator of Node.js, say that Go is the best server-side system ever? Is this the end of Node.js?
 ---
