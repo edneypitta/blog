@@ -5,7 +5,7 @@ order: 1
 layout: Post
 description: Why would Ryan Dahl, creator of Node.js, say that Go is the best server-side system ever? Is this the end of Node.js?
 ---
-In a recent interview, Ryan Dahl, creator of Node.js, said the following quote when talking about Node's concurrency model:
+Ryan Dahl, the creator of Node.js, said the following while he was talking about Node's concurrency model:
 
 > [...] I think Node is not the best system to build a massive server web. I would use Go for that. And honestly, that’s the reason why I left Node. It was the realization that: oh, actually, this is not the best server-side system ever.
 
