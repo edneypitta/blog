@@ -1,5 +1,5 @@
 ---
-title: My anti-procrastionation list
+title: My anti-procrastination list
 order: 2
 route: /my-anti-procrastination-list
 layout: Post
